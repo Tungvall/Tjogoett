@@ -26,7 +26,7 @@ public class App {
                 cards.shuffleDeck();                                                                        // shuffle the deck.
             if (Option == 3)                                                                                // Starting game.
                 if (!cards.getShuffeledStatus()) {                                                          // Question to start game even though not shuffeled.     
-                    if (UserInterface.getYesNoOption("The deck is not shuffeled and it probalby wont be fun.\n Continue anyways?"))                                                     // If yes, sets startGame to true so it starts at the end of while-loop.
+                    if (UserInterface.getYesNoOption("The deck is not shuffeled and it probalby wont be fun.\n Continue?"))                                                     // If yes, sets startGame to true so it starts at the end of while-loop.
                         startGame = true;
                 } else if (cards.getShuffeledStatus())                                                      // If no, continue while-loop.
                     startGame = true;
